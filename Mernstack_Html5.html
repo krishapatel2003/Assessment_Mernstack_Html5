@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color:skyblue;">
+<div class="container" id="container"></div>
+        <label id="1_Contact" title="CONTACT US" class="fs-5 mb-5 text-secondary text-black text-uppercase" style="padding: 10%;font-size:xx-large;">CONTACT US</label><br/>
+        <hr>
+        <br>
+        <label id="1_Address" class="mb-2 text-black text-uppercase" style="padding-left: 10%;font-size: larger;">ADDRESS :</label>
+        <div>
+            <div style="position: relative; float:left;padding-left: 10%;">
+                <label style="font-size: larger;">Saint Marco Street, 6th</label><br/>
+                <label style="font-size: larger;">floor, Tokyo, Japan, 123456.</label>
+            </div>
+            <div style="position: relative; float:left; padding-left: 15%;">
+                <i class="fa-solid fa-phone" style="color: red;"></i><label style="color:red; font-size: larger;">  +91 1234567890</label><br/>
+                <img/><i class="fa-solid fa-envelope" style="color: blue;"></i><label style="color:blue; font-size: larger;">  example@gmail.com</label>
+            </div>
+            <div style="position: relative; float:left; padding-left: 15%;">
+                <a class="fa-solid fa-location-dot" title="location" style="color: red; font-size: 1.73em;"></a>
+            </div>
+            <div style="position: relative;">
+            </div>
+        </div>
+    </div>
+    <!-- <h2 style="padding-left: 10%;">Contact Us</h2> -->
+    <form id="contactForm" onsubmit="return validateForm()" class="col-lg-6 my-4" style="position: absolute; float:left; padding: 10%;">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" class="form-input" required placeholder="Name:" style="float: left; width: 47%; margin-right: 0%; padding-right: 0%; ">
+        
+        <span id="nameError" class="error-message"></span>
+
+        <label for="Company"></label>
+        <input type="text" id="Company" name="Company" class="form-input" required placeholder="Company:" style="float:right; width: 47%; margin-right: 0%; padding-right: 0%;">
+        <span id="CompanyError" class="error-message"></span>
+        <br>
+        <br>
+        <label for="Email"></label>
+        <input type="text" id="Email" name="Email" class="form-input" required placeholder="Email:" style="float: left; width: 47%; margin-right: 0%; padding-right: 0%;" >
+        <span id="EmailError" class="error-message"></span>
+
+        <label for="mobile"></label>
+        <input type="text" id="mobile" name="mobile" class="form-input" required placeholder="Mobile:" style="float:right; width: 47%; margin-right: 0%; padding-right: 0%;" >
+        <span id="mobileError" class="error-message"></span>
+        <br>
+        <br>
+
+        <label for="message"></label>
+        <textarea id="message" name="message" class="form-input" required placeholder="Message:"style="width: 98%; height: 60px"></textarea>
+        <br>
+        <br>
+        <button type="Send" class="button" value="Send" style="background-color:red;width: 18%;padding: 2%;border-radius: 6px; font-size: large;">Send</button>
+    </form>
+    <div class="col-lg-6 my-4"  style="position: absolute; float:left; margin-top:10%;margin-left: 40%;height: 50%;width:50%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.86297134184!2d72.50630707474538!3d23.028802979169342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b767b0a48ed%3A0x713f82e619ac7868!2sTOPS%20Technologies%20-%20Best%20IT%20Training%20Institute%20in%20Ahmedabad!5e0!3m2!1sen!2sin!4v1737896136164!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <br>
+            <a class="fa-brands fa-square-facebook" href="https://www.facebook.com/login.php" title="facebook" style="transition: all 0.3s; font-size: 1.73em; "></a>
+            <a class="fa-brands fa-square-twitter" href="https://x.com/?mx=2" title="twitter" style="color: rgb(12, 173, 237); font-size: 1.73em;"></a>
+            <a class="fa-brands fa-linkedin" href="https://in.linkedin.com/" title="linkedin" style="font-size: 1.73em;"></a>       
+            <a class="fa-brands fa-square-github" href="https://github.com/" title="github" style="color: black; font-size: 1.73em;"></a>  
+    </div>
+</div>
+</body>
+</html>
